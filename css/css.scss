@@ -2,22 +2,31 @@
 @import "reset.css";
 
 #banner{
-  width: 800px;
+  width: 100%;
   margin: 50px auto;
   overflow: hidden;
   #JieFocus{
-    $width:800px; $height:460px;
+    $width:100%; $height:580px;
     width: $width;
     height: $height;
     overflow: hidden;
     position: relative;
+    li{
+      width: $width;
+      height: $height;
+      background-size: cover;
+      background-position: center;
+      img{
+        text-align: center;
+      }
+    }
     .FocusNum {
-  		position: absolute;
+      position: absolute;
       right: 10px;
       bottom: 0;
       height: 25px;
-  		li {
-  			float: left;
+      li {
+        float: left;
         width: 6px;
         height: 6px;
         margin: 0 5px;
@@ -27,21 +36,21 @@
         text-align: left;
         text-indent: -9999px;
         overflow: hidden;
-  			&.active {background: #fff;color: #555;}
+        &.active {background: #fff;color: #555;}
         a{
           img{
             width: $width;
             height: $height;
           }
         }
-  		}
-  	}
+      }
+    }
     .FocusLeft,.FocusRight {
-  		position: absolute;
+      position: absolute;
       width: 30px;height: 80px;
-      top: 180px;
+      top: 220px;
       left: 10px;
-  	}
+    }
     .FocusLeft{
       background: url("../img/icon-slides.png") no-repeat -92px 50%;
     }
@@ -54,7 +63,7 @@
     .FocusRight:hover{
       background: url("../img/icon-slides.png") no-repeat -46px 50%;
     }
-  	.FocusRight {
+    .FocusRight {
       right: 10px;
       left: auto;
     }

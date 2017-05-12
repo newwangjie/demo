@@ -9,23 +9,23 @@
 </head>
 <body>
   <div id="banner">
-	  <div id="JieFocus">
-		  <ul>
-        <li><a href="#"><img src="img/1.jpg" alt="this is the Focus title 1" data-info="this is the Focus info for 1"></a></li>
-			  <li><a href="#"><img src="img/2.jpg" alt="this is the Focus title 2" data-info="this is the Focus info for 2"></a></li>
-			  <li><a href="#"><img src="img/3.jpg" alt="this is the Focus title 3" data-info="this is the Focus info for 3"></a></li>
-        <li><a href="#"><img src="img/2.jpg" alt="this is the Focus title 4" data-info="this is the Focus info for 4"></a></li>
-		  </ul>
-	  </div>
+    <div id="JieFocus">
+      <ul>
+        <li class="bg1"><a href="#"><img src="img/5.jpg" alt="this is the Focus title 2" data-info="this is the Focus info for 2"></a></li>
+        <li class="bg2"><a href="#"><img src="img/6.jpg" alt="this is the Focus title 2" data-info="this is the Focus info for 2"></a></li>
+        <li class="bg3"><a href="#"><img src="img/7.jpg" alt="this is the Focus title 3" data-info="this is the Focus info for 3"></a></li>
+        <li class="bg4"><a href="#"><img src="img/8.jpg" alt="this is the Focus title 4" data-info="this is the Focus info for 4"></a></li>
+      </ul>
+    </div>
   </div>
 <script>
 $(function(){
-	$("#JieFocus").JieFocus({
-		defaultIndex	: 0,					// 默认显示第几个，第一个为 0
-		trigger 		: "click",				// 数字交互方式，click 为 点击切换，mouseover 为鼠标碰到就切换
-		showtime 		: 2000,					// 默认自动切换时间，单位为毫秒
-		showWay 		: "slow"				// 焦点图切换方式，slow 为渐隐渐现 down 为上下切换
-	});
+  $("#JieFocus").JieFocus({
+    defaultIndex  : 0,          // 默认显示第几个，第一个为 0
+    trigger     : "click",        // 数字交互方式，click 为 点击切换，mouseover 为鼠标碰到就切换
+    showtime     : 2000,          // 默认自动切换时间，单位为毫秒
+    showWay     : "slow"        // 焦点图切换方式，slow 为渐隐渐现 down 为上下切换
+  });
 });
 </script>
 </body>
